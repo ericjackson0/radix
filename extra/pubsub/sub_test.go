@@ -33,7 +33,7 @@ func TestSubscribe(t *testing.T) {
 	}
 
 	if sr.SubCount != 1 {
-		t.Fatal(fmt.Sprintf("Unexpected subscription count, Expected: 0, Found: %d", sr.SubCount))
+		t.Fatal(fmt.Sprintf("Unexpected subscription count, Expected: 1, Found: %d", sr.SubCount))
 	}
 
 	r := pub.Cmd("PUBLISH", channel, message)
